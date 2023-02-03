@@ -3,8 +3,7 @@ import joblib
 from flask import Flask, request
 import string
 import pandas as pd
-from nltk.corpus import stopwords
-", ".join(stopwords.words('english'))
+
 
 model, X_train, y_train = joblib.load('model.h5')
 scaler = joblib.load('tfidf.joblib')
